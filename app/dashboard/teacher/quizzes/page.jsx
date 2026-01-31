@@ -108,6 +108,12 @@ export default function TeacherQuizzesCrystalPage() {
             <Plus className="w-8 h-8" /> إنشاء كوز جديد
           </Button>
         </Link>
+        <Link href="/dashboard/teacher/quizzes/results">
+          <Button className="bg-blue-600 hover:bg-blue-500 text-white rounded-[30px] h-20 px-12 font-[1000] text-2xl shadow-2xl shadow-blue-600/30 gap-4 transition-all active:scale-95">
+            <Plus className="w-8 h-8" /> Results Overview
+          </Button>
+        </Link>
+        
       </div>
 
       {/* Quizzes Glass Grid */}

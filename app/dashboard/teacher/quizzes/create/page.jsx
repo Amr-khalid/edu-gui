@@ -29,6 +29,7 @@ import QuestionItem from "../../../../components/quiz/QuestionItem";
 import axios from "axios";
 import { toast } from "sonner";
 import gsap from "gsap";
+import Link from "next/link";
 
 export default function CreateQuizGlassPage() {
   const [loading, setLoading] = useState(false);
@@ -131,6 +132,11 @@ export default function CreateQuizGlassPage() {
                 </p>
                 <p className="text-sm font-bold text-emerald-400 italic">
                   SYSTEM READY
+                </p>
+                <p className="text-sm font-bold text-emerald-400 italic">
+                  <Link href="/dashboard/teacher/quizzes/results">
+         Results Overview
+        </Link>
                 </p>
               </div>
             </div>

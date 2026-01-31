@@ -23,7 +23,7 @@ import { Button } from "@/components/ui/button";
 import { jwtDecode } from "jwt-decode"; // استيراد مفكك التوكن
 
 export default function StudentCalendarPage() {
-  const [date, setDate] = useState<Date | undefined>(new Date());
+  const [date, setDate] = useState(new Date());
   const [events, setEvents] = useState ([]);
   const [loading, setLoading] = useState(true);
 

@@ -28,7 +28,7 @@ export default function TeacherMaterialsCrystalPage() {
 
   const [title, setTitle] = useState("");
   const [section, setSection] = useState("");
-  const [file, setFile] = useState<File | null>(null);
+  const [file, setFile] = useState(null);
   const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
 
   const fetchMaterials = async () => {
