@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+, "app/components/dashboard/students/page.jsx", "app/components/dashboard/students/reports/page.jsx", "app/dashboard/calendar/page.jsx", "app/dashboard/profile/page.jsx", "app/dashboard/settings/page.jsx", "app/dashboard/student/attendance/page.jsx", "app/dashboard/student/calendar/page.jsx", "app/dashboard/student/stats/page.jsx", "app/dashboard/student/videos/page.jsx", "app/dashboard/teacher/calendar/page.jsx", "app/dashboard/teacher/notifications/page.jsx", "app/dashboard/student/page.jsx", "app/dashboard/teacher/materials/page.jsx", "app/dashboard/teacher/quizzes/create/page.jsx", "app/dashboard/teacher/quizzes/results/[id]/page.jsx", "app/dashboard/teacher/quizzes/results/page.jsx", "app/dashboard/teacher/quizzes/page.jsx", "app/dashboard/teacher/scan/page.jsx", "app/dashboard/teacher/videos/page.jsx", "app/login/page.jsx"  ],
+  "exclude": ["node_modules"]
+}
