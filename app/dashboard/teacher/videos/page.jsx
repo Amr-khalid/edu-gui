@@ -49,7 +49,7 @@ export default function TeacherVideoBroadcastPage() {
     description: "",
   });
 
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL;
+  const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:4000";
   const getHeaders = () => ({
     Authorization: `Bearer ${localStorage.getItem("token")}`,
   });

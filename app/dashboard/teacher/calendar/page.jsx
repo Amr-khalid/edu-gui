@@ -23,12 +23,9 @@ export default function TeacherCalendarGlassPage() {
   const [date, setDate] = useState(new Date());
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [viewFilter, setViewFilter] = useState(
-    "all",
-  );
+  const [viewFilter, setViewFilter] = useState("all");
   const containerRef = useRef(null);
   const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-
 
   const API_URL = `${API_BASE}/api/calendar`;
 
@@ -70,7 +67,7 @@ export default function TeacherCalendarGlassPage() {
       });
       toast.success("تم الحذف بنجاح ✅");
       fetchEvents(); // تحديث القائمة فوراً
-    } catch (err ) {
+    } catch (err) {
       toast.error(err.response?.data?.message || "فشل الحذف");
     }
   };
